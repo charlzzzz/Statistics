@@ -9,7 +9,7 @@ Problem  2: Expected value and variance
 |x=1  | 1/8  | 4/16 |
 |x=2  | 0    | 3/16 |
 
-a, Calculating $p_X[x]$,
+(a) Calculating $p_X[x]$,
 
 $$p_X(x) = \sum_{y=0}^1 pX,Y(x,y)$$
 
@@ -39,14 +39,16 @@ ylabel('p_X(x)');
 title('Marginal PMF of X');
 grid on;
 ```
+<img src="/Users/charles/GIT_local/Statistics/Problem 2/Marginal_PMF_X.fig" alt="Logo">
 
-b, Computing mean $\mu_x$,
+
+(b) Computing mean $\mu_x$,
 
 $$\mu_x = Exp[X] = \sum_{x=0}^2 x.p_X(x)$$
 
 $\mu_x$ = 0.pX(0)+1.pX(1)+2.pX(2) = 0+6/16+2.3/16 = 12/16 = 3/4 = 0.75
 
-c, Computing Variance of X, $\sigma_X^2$
+(c) Computing Variance of X, $\sigma_X^2$
 
 $$\sigma_X^2 = Exp[X-\mu_x] = \sum_{x=0}^2 (X-\mu_x)^2.p_x(X)$$
 
@@ -99,7 +101,7 @@ disp(estimated_p_X);
 disp(estimated_p_Y);
 ```
 
-g, calculating correlation coefficient,
+(g) calculating correlation coefficient,
 
  Calculating $p_Y[y]$,
 
